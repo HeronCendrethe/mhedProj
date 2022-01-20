@@ -1,11 +1,7 @@
 package br.com.smartbot.testesmartbot.contoller;
 
 
-import br.com.smartbot.testesmartbot.feignInterface.CoinConsumer;
-
-import br.com.smartbot.testesmartbot.service.CoinService;
-import br.com.smartbot.testesmartbot.vo.Coin;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import br.com.smartbot.testesmartbot.service.CoinOneMinService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,14 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
-import java.util.*;
 
 @RestController
 @RequestMapping(value = "/api/coin")
-public class CoinController {
+public class CoinOneMinController {
 
     @Autowired
-    private CoinService coinService;
+    private CoinOneMinService coinService;
 
     @GetMapping("/search-coin")
     public ResponseEntity<?> getCoins() throws IOException {

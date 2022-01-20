@@ -1,6 +1,5 @@
 package br.com.smartbot.testesmartbot.service;
 
-import br.com.smartbot.testesmartbot.contoller.CoinController;
 import br.com.smartbot.testesmartbot.feignInterface.CoinConsumer;
 import br.com.smartbot.testesmartbot.vo.Coin;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.*;
 
 @Service
-public class CoinService {
+public class CoinOneMinService {
 
     @Autowired
     CoinConsumer consumer;

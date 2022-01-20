@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="" />
+    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/contoller/CoinFiveMinController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/contoller/CoinTenMinController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/entity/CoinFiveMinEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/entity/CoinTenMinEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinFiveMinRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinTenMinRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinFiveMinService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinTenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/contoller/CoinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/contoller/CoinOneMinController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinOneMinRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinOneMinService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +66,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.smartbot.testesmartbot.entity" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -118,7 +136,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/contoller/CoinController.java</url>
+          <url>file://$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/contoller/CoinOneMinController.java</url>
           <line>18</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
