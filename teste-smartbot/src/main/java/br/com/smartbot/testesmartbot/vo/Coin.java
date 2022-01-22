@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Coin {
 
-    private String id;
+    private Integer id;
     private String last;
     private String lowestAsk;
     private String highestBid;
@@ -18,13 +18,14 @@ public class Coin {
     private String high24hr;
     private String low24hr;
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
+
     public String getLast() {
         return last;
     }

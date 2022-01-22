@@ -4,21 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="Implementação das classes para persistência de banco de dados">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_3_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_6_0.xml" afterDir="false" />
+    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="Implementação das querys para persistência de banco de dados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/contoller/CoinOneMinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/contoller/CoinOneMinController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/entity/CoinFiveMinEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/entity/CoinFiveMinEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/entity/CoinOneMinEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/entity/CoinOneMinEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/entity/CoinTenMinEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/entity/CoinTenMinEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinFiveMinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinFiveMinRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinOneMinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinOneMinRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinTenMinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinTenMinRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinFiveMinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinFiveMinService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinOneMinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinOneMinService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinTenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinTenMinService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinTenMinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinTenMinService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/vo/Coin.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/vo/Coin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -63,7 +59,6 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Downloads/consumo-master" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -129,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642649373899</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implementação das querys para persistência de banco de dados">
+      <created>1642736875734</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1642736875734</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,14 +147,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implementação das classes para persistência de banco de dados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementação das classes para persistência de banco de dados" />
+    <MESSAGE value="Implementação das querys para persistência de banco de dados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementação das querys para persistência de banco de dados" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/contoller/CoinOneMinController.java</url>
-          <line>18</line>
+          <line>21</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
