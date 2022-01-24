@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="Implementação das querys para persistência de banco de dados">
+    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="Implementação dos primarys inserts finalizada e funcional">
+      <change afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/FindMaxAndLowValues.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/contoller/CoinOneMinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/contoller/CoinOneMinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/entity/CoinFiveMinEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/entity/CoinFiveMinEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/entity/CoinOneMinEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/entity/CoinOneMinEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/entity/CoinTenMinEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/entity/CoinTenMinEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/TesteSmartbotApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/TesteSmartbotApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinFiveMinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinFiveMinRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinOneMinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinOneMinRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinTenMinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinTenMinRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinFiveMinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinFiveMinService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinOneMinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinOneMinService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinTenMinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinTenMinService.java" afterDir="false" />
@@ -24,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -131,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642736875734</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implementação dos primarys inserts finalizada e funcional">
+      <created>1642881073865</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642881073865</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,7 +155,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implementação das classes para persistência de banco de dados" />
     <MESSAGE value="Implementação das querys para persistência de banco de dados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementação das querys para persistência de banco de dados" />
+    <MESSAGE value="Implementação dos primarys inserts finalizada e funcional" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementação dos primarys inserts finalizada e funcional" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

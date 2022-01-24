@@ -1,7 +1,17 @@
 package br.com.smartbot.testesmartbot.vo;
 
+import br.com.smartbot.testesmartbot.feignInterface.CoinConsumer;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+@Component
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Coin {
 
@@ -112,6 +122,19 @@ public class Coin {
 
     public void setLow24hr(String low24hr) {
         this.low24hr = low24hr;
+    }
+
+    public List<Coin> mappingApiResults(CoinConsumer consumer){
+        Map<String,Coin> mapCoin = (Map<String, Coin>) consumer.find();
+        Set<String> setCoin = mapCoin.keySet();
+        List<Coin> coinList = new ArrayList<Coin>(mapCoin.values());
+
+        ObjectMapper mapper = new ObjectMapper();
+
+        List<Coin> coin = mapper.convertValue(
+                coinList,
+                new TypeReference<List<Coin>>() { });
+        return  coin;
     }
 }
 
