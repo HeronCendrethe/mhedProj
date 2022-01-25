@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="Implementação dos primarys inserts finalizada e funcional">
-      <change afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/FindMaxAndLowValues.java" afterDir="false" />
+    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="Implementação da inserção de valores após x quantidade de tempo funcional">
+      <change afterPath="$PROJECT_DIR$/teste-smartbot/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste-smartbot/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste-smartbot/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/TesteSmartbotApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/TesteSmartbotApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinFiveMinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinFiveMinRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinOneMinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinOneMinRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinTenMinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinTenMinRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinFiveMinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinFiveMinService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinOneMinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinOneMinService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinTenMinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinTenMinService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/vo/Coin.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/vo/Coin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,9 +59,13 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\pastas windows\Documents\Intelij\teste-smartbot\teste-smartbot\src\main\docker" />
+      <recent name="D:\pastas windows\Documents\Intelij\teste-smartbot\teste-smartbot\src" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.com.smartbot.testesmartbot.entity" />
     </key>
@@ -138,7 +138,21 @@
       <option name="project" value="LOCAL" />
       <updated>1642881073865</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implementação da inserção de valores após x quantidade de tempo funcional">
+      <created>1643057457900</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1643057457900</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implementação da inserção de valores após x quantidade de tempo funcional">
+      <created>1643084720893</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1643084720893</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,17 +170,22 @@
     <MESSAGE value="Implementação das classes para persistência de banco de dados" />
     <MESSAGE value="Implementação das querys para persistência de banco de dados" />
     <MESSAGE value="Implementação dos primarys inserts finalizada e funcional" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementação dos primarys inserts finalizada e funcional" />
+    <MESSAGE value="Implementação da inserção de valores após x quantidade de tempo funcional" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementação da inserção de valores após x quantidade de tempo funcional" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/contoller/CoinOneMinController.java</url>
-          <line>21</line>
+          <line>22</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

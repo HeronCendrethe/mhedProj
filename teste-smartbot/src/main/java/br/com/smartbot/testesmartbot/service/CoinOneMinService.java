@@ -48,7 +48,7 @@ public class CoinOneMinService{
 
     @Transactional
     @Scheduled(fixedRate = 60000)
-    public void insertValuesFor1MinuteElapsed() throws SQLDataException {
+    public void insertValuesFor1MinuteElapsed(){
 
         Map<String,Coin> mapCoin = new HashMap<>();
         List<Float> highAndLowValue = new ArrayList<>();
@@ -70,9 +70,7 @@ public class CoinOneMinService{
         for(Coin keyCoin : coin.mappingApiResults(consumer)){
             System.out.println(Float.valueOf(keyCoin.getLast()));
             coinOneMinRepository.updateValuesForOneMinElapsed(keyCoin.getId(), highValue,lowValue, LocalDateTime.now(),Float.valueOf(keyCoin.getLast()));
-        }
-
-    }
-
+          }
+       }
 
 }
