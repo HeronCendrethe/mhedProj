@@ -9,7 +9,9 @@ import br.com.smartbot.testesmartbot.vo.Coin;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,6 +20,8 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.*;
 
+@Component
+@EnableScheduling
 @Service
 public class CoinFiveMinService{
 
@@ -29,7 +33,7 @@ public class CoinFiveMinService{
     Coin coin;
 
     @PostConstruct
-    public void insertPrimaryValuesForPrimaryRequest (){
+    public void insertPrimaryValuesForPrimaryRequest(){
 
         for(Coin keyCoin : coin.mappingApiResults(consumer)){
             CoinFiveMinEntity coinFiveMinEntity = new CoinFiveMinEntity();
@@ -42,7 +46,7 @@ public class CoinFiveMinService{
     }
 
     @Transactional
-    @Scheduled(fixedRate = 60000)
+    @Scheduled(fixedRate = 300000)
     public void insertValuesFor1MinuteElapsed(){
 
         Map<String,Coin> mapCoin = new HashMap<>();
@@ -64,7 +68,7 @@ public class CoinFiveMinService{
 
         for(Coin keyCoin : coin.mappingApiResults(consumer)){
             System.out.println(Float.valueOf(keyCoin.getLast()));
-            coinFiveMinRepository.updateValuesForOneMinElapsed(keyCoin.getId(), highValue,lowValue, LocalDateTime.now(),Float.valueOf(keyCoin.getLast()));
+            coinFiveMinRepository.updateValuesForFiveMinElapsed(keyCoin.getId(), highValue,lowValue, LocalDateTime.now(),Float.valueOf(keyCoin.getLast()));
         }
 
     }

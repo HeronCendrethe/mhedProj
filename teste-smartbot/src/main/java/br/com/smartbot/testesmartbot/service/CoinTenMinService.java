@@ -10,7 +10,9 @@ import br.com.smartbot.testesmartbot.vo.Coin;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,7 +22,9 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.*;
 
+@Component
 @Service
+@EnableScheduling
 public class CoinTenMinService {
 
     @Autowired
@@ -44,8 +48,8 @@ public class CoinTenMinService {
     }
 
     @Transactional
-    @Scheduled(fixedRate = 600000)
-    public void insertValuesFor1MinuteElapsed(){
+    @Scheduled(fixedRate = 300000)
+    public void insertValuesFor1MinuteElapsed() {
 
         Map<String,Coin> mapCoin = new HashMap<>();
         List<Float> highAndLowValue = new ArrayList<>();
@@ -70,5 +74,11 @@ public class CoinTenMinService {
         }
 
     }
+
+    public  Integer calculaMedia(Integer x, Integer y, Integer z) throws ArithmeticException{
+        return x+z+z/3;
+    }
+
+
 
 }

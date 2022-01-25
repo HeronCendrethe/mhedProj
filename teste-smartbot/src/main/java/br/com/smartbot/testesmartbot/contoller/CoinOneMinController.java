@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.PostConstruct;
 import java.io.IOException;
+import java.sql.SQLDataException;
 
 @RestController
 @RequestMapping(value = "/api/coin")
@@ -19,7 +20,6 @@ public class CoinOneMinController {
 
     @Autowired
     private CoinOneMinService coinService;
-
 
 
 }

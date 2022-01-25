@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.annotation.PostConstruct;
 import javax.persistence.EntityManager;
 import java.math.BigDecimal;
+import java.sql.SQLDataException;
 import java.time.LocalDateTime;
 import java.util.*;
 
@@ -46,8 +47,8 @@ public class CoinOneMinService{
     }
 
     @Transactional
-    @Scheduled(fixedRate = 300000)
-    public void insertValuesFor1MinuteElapsed(){
+    @Scheduled(fixedRate = 60000)
+    public void insertValuesFor1MinuteElapsed() throws SQLDataException {
 
         Map<String,Coin> mapCoin = new HashMap<>();
         List<Float> highAndLowValue = new ArrayList<>();

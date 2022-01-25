@@ -13,9 +13,9 @@ import java.time.LocalDateTime;
 public interface CoinFiveMinRepository extends PagingAndSortingRepository<CoinFiveMinEntity,Integer> {
 
     @Modifying
-    @Query("update CoinFiveMinRepository coinFiveMinEntity set coinFiveMinEntity.closeValue = :close, "+
+    @Query("update CoinFiveMinEntity coinFiveMinEntity set coinFiveMinEntity.closeValue = :close, "+
             "coinFiveMinEntity.dateTimeCoin = :timeCoin, coinFiveMinEntity.highValue = :high, coinFiveMinEntity.lowValue = :low where coinFiveMinEntity.id = :id")
-    void updateValuesForOneMinElapsed(@Param("id") Integer id, @Param("high") Float high, @Param("low") Float low, @Param("timeCoin") LocalDateTime timeCoin, @Param("close") Float close);
+    void updateValuesForFiveMinElapsed(@Param("id") Integer id, @Param("high") Float high, @Param("low") Float low, @Param("timeCoin") LocalDateTime timeCoin, @Param("close") Float close);
 }
 
 
