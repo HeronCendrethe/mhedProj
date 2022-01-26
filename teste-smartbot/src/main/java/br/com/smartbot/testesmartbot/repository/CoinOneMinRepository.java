@@ -1,19 +1,13 @@
 package br.com.smartbot.testesmartbot.repository;
 
 import br.com.smartbot.testesmartbot.entity.CoinOneMinEntity;
-import br.com.smartbot.testesmartbot.vo.Coin;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Repository
 public interface CoinOneMinRepository extends PagingAndSortingRepository<CoinOneMinEntity,Integer> {
@@ -21,8 +15,26 @@ public interface CoinOneMinRepository extends PagingAndSortingRepository<CoinOne
 
     @Modifying
     @Query("update CoinOneMinEntity coinOneMinEntity set coinOneMinEntity.closeValue = :close, "+
-            "coinOneMinEntity.dateTimeCoin = :timeCoin, coinOneMinEntity.highValue = :high, coinOneMinEntity.lowValue = :low where coinOneMinEntity.id = :id")
-    void updateValuesForOneMinElapsed(@Param("id") Integer id,@Param("high") Float high, @Param("low") Float low, @Param("timeCoin") LocalDateTime timeCoin, @Param("close") Float close);
+            "coinOneMinEntity.dateTimeCoin = :timeCoin where coinOneMinEntity.id = :id")
+    void updateValuesForOneMinElapsed(@Param("id") Integer id,  @Param("timeCoin") LocalDateTime timeCoin, @Param("close") Float close);
+
+    @Modifying
+    @Query("update CoinOneMinEntity coinOneMinEntity set "+
+            "coinOneMinEntity.dateTimeCoin = :timeCoin,coinOneMinEntity.highValue = :high where coinOneMinEntity.id = :id")
+    void updateMaxValueForFiveSeconds(@Param("id") Integer id,  @Param("timeCoin") LocalDateTime timeCoin, @Param("high") Float high);
+
+    @Modifying
+    @Query("update CoinOneMinEntity coinOneMinEntity set "+
+            "coinOneMinEntity.dateTimeCoin = :timeCoin,coinOneMinEntity.lowValue = :low where coinOneMinEntity.id = :id")
+    void updateLowValueForFiveSeconds(@Param("id") Integer id,  @Param("timeCoin") LocalDateTime timeCoin, @Param("low") Float low);
+
+
+    @Query("select highValue from CoinOneMinEntity coinOneMinEntity where coinOneMinEntity.id = :id")
+    Float findHighValueById(@Param("id") Integer id);
+
+    @Query("select lowValue from CoinOneMinEntity coinOneMinEntity where coinOneMinEntity.id = :id")
+    Float findLowValueById(@Param("id") Integer id);
+
 
 
 

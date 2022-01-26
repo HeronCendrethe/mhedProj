@@ -1,13 +1,9 @@
 package br.com.smartbot.testesmartbot.service;
 
 import br.com.smartbot.testesmartbot.entity.CoinFiveMinEntity;
-import br.com.smartbot.testesmartbot.entity.CoinOneMinEntity;
 import br.com.smartbot.testesmartbot.feignInterface.CoinConsumer;
 import br.com.smartbot.testesmartbot.repository.CoinFiveMinRepository;
-import br.com.smartbot.testesmartbot.repository.CoinOneMinRepository;
-import br.com.smartbot.testesmartbot.vo.Coin;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import br.com.smartbot.testesmartbot.dto.Coin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -16,7 +12,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.PostConstruct;
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.*;
 
@@ -36,7 +31,10 @@ public class CoinFiveMinService{
     public void insertPrimaryValuesForPrimaryRequest(){
 
         for(Coin keyCoin : coin.mappingApiResults(consumer)){
+            Float nowValue = Float.valueOf(keyCoin.getLast());
             CoinFiveMinEntity coinFiveMinEntity = new CoinFiveMinEntity();
+            coinFiveMinEntity.setHighValue(nowValue);
+            coinFiveMinEntity.setLowValue(nowValue);
             coinFiveMinEntity.setId(keyCoin.getId());
             coinFiveMinEntity.setDateTimeCoin(LocalDateTime.now());
             coinFiveMinEntity.setOpenValue(Float.valueOf(keyCoin.getLast()));
@@ -53,24 +51,34 @@ public class CoinFiveMinService{
         List<Float> highAndLowValue = new ArrayList<>();
         List<Coin> coinList = new ArrayList<>();
 
-        for(int i = 0; i < 1; i++){
-
-            for(Coin keyCoin : coin.mappingApiResults(consumer)){
-                highAndLowValue.add(Float.valueOf(keyCoin.getLast()));
-
-            }
-        }
-
-        FindMaxAndLowValues findMaxAndLowValues = new FindMaxAndLowValues();
-        Float highValue = findMaxAndLowValues.findHighValue(highAndLowValue);
-        Float lowValue = findMaxAndLowValues.findLowValue(highAndLowValue);
-
 
         for(Coin keyCoin : coin.mappingApiResults(consumer)){
             System.out.println(Float.valueOf(keyCoin.getLast()));
-            coinFiveMinRepository.updateValuesForFiveMinElapsed(keyCoin.getId(), highValue,lowValue, LocalDateTime.now(),Float.valueOf(keyCoin.getLast()));
+            coinFiveMinRepository.updateValuesForFiveMinElapsed(keyCoin.getId(), LocalDateTime.now(),Float.valueOf(keyCoin.getLast()));
         }
 
+    }
+
+    @Transactional
+    @Scheduled(fixedRate = 6000)
+    public void maxAndLowValues(){
+
+        for(Coin keyCoin : coin.mappingApiResults(consumer)){
+            Float nowValue = Float.valueOf(keyCoin.getLast());
+
+            Float maxValueDB = coinFiveMinRepository.findHighValueById(keyCoin.getId());
+
+            if(maxValueDB < nowValue){
+                coinFiveMinRepository.updateMaxValueForFiveSeconds(keyCoin.getId(), LocalDateTime.now(),nowValue);
+
+            }
+
+            Float lowValueDB = coinFiveMinRepository.findLowValueById(keyCoin.getId());
+
+            if(lowValueDB > nowValue){
+                coinFiveMinRepository.updateLowValueForFiveSeconds(keyCoin.getId(),LocalDateTime.now(),nowValue);
+            }
+        }
     }
 
 

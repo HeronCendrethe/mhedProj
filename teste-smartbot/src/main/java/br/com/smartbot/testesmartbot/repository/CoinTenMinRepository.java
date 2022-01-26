@@ -14,8 +14,24 @@ public interface CoinTenMinRepository extends PagingAndSortingRepository<CoinTen
 
     @Modifying
     @Query("update CoinTenMinEntity coinTenMinEntity set coinTenMinEntity.closeValue = :close, "+
-            "coinTenMinEntity.dateTimeCoin = :timeCoin, coinTenMinEntity.highValue = :high, coinTenMinEntity.lowValue = :low where coinTenMinEntity.id = :id")
-    void updateValuesForOneMinElapsed(@Param("id") Integer id, @Param("high") Float high, @Param("low") Float low, @Param("timeCoin") LocalDateTime timeCoin, @Param("close") Float close);
+            "coinTenMinEntity.dateTimeCoin = :timeCoin where coinTenMinEntity.id = :id")
+    void updateValuesForTenMinElapsed(@Param("id") Integer id,  @Param("timeCoin") LocalDateTime timeCoin, @Param("close") Float close);
+
+    @Modifying
+    @Query("update CoinTenMinEntity coinTenMinEntity set "+
+            "coinTenMinEntity.dateTimeCoin = :timeCoin,coinTenMinEntity.highValue = :high where coinTenMinEntity.id = :id")
+    void updateMaxValueForFiveSeconds(@Param("id") Integer id,  @Param("timeCoin") LocalDateTime timeCoin, @Param("high") Float high);
+
+    @Modifying
+    @Query("update CoinTenMinEntity coinTenMinEntity set "+
+            "coinTenMinEntity.dateTimeCoin = :timeCoin,coinTenMinEntity.lowValue = :low where coinTenMinEntity.id = :id")
+    void updateLowValueForFiveSeconds(@Param("id") Integer id,  @Param("timeCoin") LocalDateTime timeCoin, @Param("low") Float low);
+
+    @Query("select highValue from CoinTenMinEntity coinTenMinEntity where coinTenMinEntity.id = :id")
+    Float findHighValueById(@Param("id") Integer id);
+
+    @Query("select lowValue from CoinTenMinEntity coinTenMinEntity where coinTenMinEntity.id = :id")
+    Float findLowValueById(@Param("id") Integer id);
 
 
 }

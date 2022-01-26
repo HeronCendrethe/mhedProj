@@ -1,4 +1,4 @@
-package br.com.smartbot.testesmartbot.vo;
+package br.com.smartbot.testesmartbot.dto;
 
 import br.com.smartbot.testesmartbot.feignInterface.CoinConsumer;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

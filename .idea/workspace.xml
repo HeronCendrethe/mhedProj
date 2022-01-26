@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="Implementação da inserção de valores após x quantidade de tempo funcional">
-      <change afterPath="$PROJECT_DIR$/teste-smartbot/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teste-smartbot/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teste-smartbot/docker-compose.yaml" afterDir="false" />
+    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="Dockerização finalizada">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/feignInterface/CoinConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/feignInterface/CoinConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinFiveMinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinFiveMinRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinOneMinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinOneMinRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinTenMinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinTenMinRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinFiveMinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinFiveMinService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinOneMinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinOneMinService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinTenMinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinTenMinService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/FindMaxAndLowValues.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/vo/Coin.java" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/dto/Coin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/teste-smartbot/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643084720893</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Dockerização finalizada">
+      <created>1643135469291</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1643135469291</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,7 +184,8 @@
     <MESSAGE value="Implementação das querys para persistência de banco de dados" />
     <MESSAGE value="Implementação dos primarys inserts finalizada e funcional" />
     <MESSAGE value="Implementação da inserção de valores após x quantidade de tempo funcional" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementação da inserção de valores após x quantidade de tempo funcional" />
+    <MESSAGE value="Dockerização finalizada" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dockerização finalizada" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
