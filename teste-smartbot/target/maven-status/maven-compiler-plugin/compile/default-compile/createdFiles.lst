@@ -1,0 +1,16 @@
+br\com\smartbot\testesmartbot\repository\CoinFiveMinRepository.class
+br\com\smartbot\testesmartbot\entity\CoinFiveMinEntity.class
+br\com\smartbot\testesmartbot\entity\CoinOneMinEntity.class
+br\com\smartbot\testesmartbot\dto\Coin.class
+br\com\smartbot\testesmartbot\repository\CoinOneMinRepository.class
+br\com\smartbot\testesmartbot\entity\CoinTenMinEntity.class
+br\com\smartbot\testesmartbot\dto\Coin$1.class
+br\com\smartbot\testesmartbot\feignInterface\CoinConsumer.class
+br\com\smartbot\testesmartbot\service\CoinFiveMinService.class
+br\com\smartbot\testesmartbot\service\CoinOneMinService.class
+br\com\smartbot\testesmartbot\contoller\CoinOneMinController.class
+br\com\smartbot\testesmartbot\contoller\CoinFiveMinController.class
+br\com\smartbot\testesmartbot\contoller\CoinTenMinController.class
+br\com\smartbot\testesmartbot\repository\CoinTenMinRepository.class
+br\com\smartbot\testesmartbot\service\CoinTenMinService.class
+br\com\smartbot\testesmartbot\TesteSmartbotApplication.class
