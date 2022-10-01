@@ -1,7 +1,6 @@
-package br.com.smartbot.mhedtech.entity;
+package br.com.mhedtech.entity;
 
 
-import com.sun.istack.NotNull;
 import org.hibernate.validator.constraints.Length;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

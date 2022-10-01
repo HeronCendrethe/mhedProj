@@ -1,4 +1,4 @@
-package br.com.smartbot.mhedtech.entity;
+package br.com.mhedtech.entity;
 
 
 import javax.persistence.*;

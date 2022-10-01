@@ -1,4 +1,4 @@
-package br.com.smartbot.mhedtech;
+package br.com.mhedtech;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

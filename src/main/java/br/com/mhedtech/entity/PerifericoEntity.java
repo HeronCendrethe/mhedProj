@@ -1,8 +1,7 @@
-package br.com.smartbot.mhedtech.entity;
+package br.com.mhedtech.entity;
 
 
 import javax.persistence.*;
-import javax.persistence.criteria.CriteriaBuilder;
 import java.time.LocalDateTime;
 
 @Entity
