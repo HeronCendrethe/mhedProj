@@ -1,4 +1,4 @@
-package br.com.smartbot.mhedtech;
+package br.com.mhedtech;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

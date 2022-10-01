@@ -1,6 +1,7 @@
 package br.com.mhedtech.entity;
 
 
+import br.com.mhedtech.dto.UsuarioDto;
 import org.hibernate.validator.constraints.Length;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -12,11 +13,11 @@ import java.util.Collection;
 
 @Table(name = "usuario")
 @Entity
-public class UsuarioEntity implements UserDetails {
+public class UsuarioEntity implements UserDetails{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer usuarioId;
+    private Long usuarioId;
 
     @Column(nullable = false)
     @NotBlank(message = "O nome não pode ser vazio")
@@ -30,15 +31,59 @@ public class UsuarioEntity implements UserDetails {
     private LocalDateTime dataMaq;
 
     @OneToOne( fetch = FetchType.LAZY)
+    @JoinColumn(name = "patrimonio")
     private MaquinaEntity maquina;
 
 
+    public void toEntity(UsuarioDto usuarioDto){
+
+        this.nome = usuarioDto.getNome();
+        this.setor = usuarioDto.getSetor();
+        this.dataMaq = usuarioDto.getDataMaq();
 
 
+    }
 
 
+    public Long getUsuarioId() {
+        return usuarioId;
+    }
 
+    public void setUsuarioId(Long usuarioId) {
+        this.usuarioId = usuarioId;
+    }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getSetor() {
+        return setor;
+    }
+
+    public void setSetor(String setor) {
+        this.setor = setor;
+    }
+
+    public LocalDateTime getDataMaq() {
+        return dataMaq;
+    }
+
+    public void setDataMaq(LocalDateTime dataMaq) {
+        this.dataMaq = dataMaq;
+    }
+
+    public MaquinaEntity getMaquina() {
+        return maquina;
+    }
+
+    public void setMaquina(MaquinaEntity maquina) {
+        this.maquina = maquina;
+    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

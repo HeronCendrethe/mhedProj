@@ -4,80 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="Dockerização finalizada">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_8_0_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_7_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mhedtech.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/smartbot/mhedtech/entity/HistoricoEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/smartbot/mhedtech/entity/MaquinaEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/smartbot/mhedtech/entity/PerifericoEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/smartbot/mhedtech/entity/UsuarioEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/mhedtech/MhedTech.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/mhedtech/entity/HistoricoEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/mhedtech/entity/MaquinaEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/mhedtech/entity/PerifericoEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/mhedtech/entity/UsuarioEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teste-smartbot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="criação dos arquivos">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/dto/MaquinaDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/dto/UsuarioDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_8_0_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_7_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/TesteSmartbotApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/smartbot/mhedtech/MhedTech.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/contoller/CoinFiveMinController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/contoller/CoinOneMinController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/contoller/CoinTenMinController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/dto/Coin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/entity/CoinFiveMinEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/entity/CoinOneMinEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/entity/CoinTenMinEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/feignInterface/CoinConsumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinFiveMinRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinOneMinRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/repository/CoinTenMinRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinFiveMinService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinOneMinService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/java/br/com/smartbot/testesmartbot/service/CoinTenMinService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/src/test/java/br/com/smartbot/testesmartbot/TesteSmartbotApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/smartbot/mhedtech/TesteSmartbotApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/classes/br/com/smartbot/testesmartbot/TesteSmartbotApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/TesteSmartbotApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/classes/br/com/smartbot/testesmartbot/contoller/CoinFiveMinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/contoller/CoinFiveMinController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/classes/br/com/smartbot/testesmartbot/contoller/CoinOneMinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/contoller/CoinOneMinController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/classes/br/com/smartbot/testesmartbot/contoller/CoinTenMinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/contoller/CoinTenMinController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/classes/br/com/smartbot/testesmartbot/dto/Coin$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/dto/Coin$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/classes/br/com/smartbot/testesmartbot/dto/Coin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/dto/Coin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/classes/br/com/smartbot/testesmartbot/entity/CoinFiveMinEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/entity/CoinFiveMinEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/classes/br/com/smartbot/testesmartbot/entity/CoinOneMinEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/entity/CoinOneMinEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/classes/br/com/smartbot/testesmartbot/entity/CoinTenMinEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/entity/CoinTenMinEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/classes/br/com/smartbot/testesmartbot/feignInterface/CoinConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/feignInterface/CoinConsumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/classes/br/com/smartbot/testesmartbot/repository/CoinFiveMinRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/repository/CoinFiveMinRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/classes/br/com/smartbot/testesmartbot/repository/CoinOneMinRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/repository/CoinOneMinRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/classes/br/com/smartbot/testesmartbot/repository/CoinTenMinRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/repository/CoinTenMinRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/classes/br/com/smartbot/testesmartbot/service/CoinFiveMinService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/service/CoinFiveMinService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/classes/br/com/smartbot/testesmartbot/service/CoinOneMinService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/service/CoinOneMinService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/classes/br/com/smartbot/testesmartbot/service/CoinTenMinService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/service/CoinTenMinService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/test-classes/br/com/smartbot/testesmartbot/TesteSmartbotApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/br/com/smartbot/testesmartbot/TesteSmartbotApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/teste-smartbot-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/teste-smartbot-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste-smartbot/target/teste-smartbot-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/teste-smartbot-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/MaquinaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/MaquinaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/MaquinaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/MaquinaEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/UsuarioEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/UsuarioEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/MaquinaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/MaquinaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/UsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/MaquinaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/MaquinaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/smartbot/mhedtech/TesteSmartbotApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/mhedtech/TesteSmartbotApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/mhedtech/MhedTech.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/mhedtech/entity/MaquinaEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/TesteSmartbotApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/contoller/CoinFiveMinController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/contoller/CoinOneMinController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/contoller/CoinTenMinController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/dto/Coin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/dto/Coin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/entity/CoinFiveMinEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/entity/CoinOneMinEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/entity/CoinTenMinEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/feignInterface/CoinConsumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/repository/CoinFiveMinRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/repository/CoinOneMinRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/repository/CoinTenMinRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/service/CoinFiveMinService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/service/CoinOneMinService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/service/CoinTenMinService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/smartbot/testesmartbot/TesteSmartbotApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +62,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -125,18 +89,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/heron/IdeaProjects/mhedtech",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/heron/IdeaProjects/mhedtech&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\pastas windows\Documents\Intelij\teste-smartbot\teste-smartbot\src\main\docker" />
@@ -153,26 +117,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MhedTech (1)">
-    <configuration name="MhedTech (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.smartbot.mhedtech.MhedTech" />
+  <component name="RunManager">
+    <configuration name="MhedTech" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.mhedtech.MhedTech" />
       <module name="teste-smartbot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.smartbot.mhedtech.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MhedTech" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.smartbot.mhedtech.MhedTech" />
-      <module name="mhedtech" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.smartbot.mhedtech.*" />
+          <option name="PATTERN" value="br.com.mhedtech.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,7 +144,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MhedTech (1)" />
         <item itemvalue="Application.MhedTech" />
       </list>
     </recent_temporary>
@@ -249,7 +199,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643135469291</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Mapemento de classes completo">
+      <created>1664590338236</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664590338236</updated>
+    </task>
+    <task id="LOCAL-00008" summary="criação dos arquivos">
+      <created>1664590789406</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664590789406</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,7 +233,38 @@
     <MESSAGE value="Implementação dos primarys inserts finalizada e funcional" />
     <MESSAGE value="Implementação da inserção de valores após x quantidade de tempo funcional" />
     <MESSAGE value="Dockerização finalizada" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dockerização finalizada" />
+    <MESSAGE value="Mapemento de classes completo" />
+    <MESSAGE value="criação dos arquivos" />
+    <option name="LAST_COMMIT_MESSAGE" value="criação dos arquivos" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/UsuarioService.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/UsuarioRepository.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/UsuarioService.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/UsuarioRepository.java</url>
+          <line>15</line>
+          <properties class="br.com.mhedtech.repository.UsuarioRepository" method="buscaUsuarioPorIdMaquina">
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

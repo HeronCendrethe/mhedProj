@@ -1,25 +1,14 @@
-package br.com.mhedtech.entity;
+package br.com.mhedtech.dto;
 
 
-import br.com.mhedtech.dto.MaquinaDto;
-import br.com.mhedtech.dto.UsuarioDto;
-
-import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
 import java.time.LocalDateTime;
-import java.util.List;
 
-@Entity
-@Table(name = "maquina")
-public class MaquinaEntity {
+public class MaquinaDto {
 
-    @Id
     private Long patrimonio;
 
-    @NotBlank(message = "O nome da máquina não pode ser vazio")
     private String nomeMaquina;
 
-    @NotBlank(message = "O nome da config não pode ser vazio")
     private String config;
 
     private LocalDateTime dataCompra;
@@ -27,19 +16,6 @@ public class MaquinaEntity {
     private String officeChave;
 
     private String antivirusChave;
-
-
-
-    public void toEntity(MaquinaDto maquinaDto){
-        this.patrimonio = maquinaDto.getPatrimonio();
-        this.nomeMaquina = maquinaDto.getNomeMaquina();
-        this.config = maquinaDto.getConfig();
-        this.dataCompra = maquinaDto.getDataCompra();
-        this.officeChave = maquinaDto.getOfficeChave();
-        this.antivirusChave = maquinaDto.getAntivirusChave();
-
-    }
-
 
     public Long getPatrimonio() {
         return patrimonio;
