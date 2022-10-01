@@ -6,15 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="mhedtech" />
         <module name="teste-smartbot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="mhedtech" target="1.8" />
       <module name="teste-smartbot" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mhedtech" options="-parameters" />
       <module name="teste-smartbot" options="-parameters" />
     </option>
   </component>
