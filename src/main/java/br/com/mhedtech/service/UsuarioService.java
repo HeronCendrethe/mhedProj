@@ -46,7 +46,7 @@ public class UsuarioService {
 
     }
 
-    public UsuarioDto buscaUsuarioPeloPatrimonio(Long patrimonio){
+    public UsuarioDto buscaUsuarioPeloPatrimonio(Long patrimonio) throws NoResultException{
 
         System.out.println(usuarioRepository.buscaUsuarioPorIdMaquina(patrimonio));
         Optional<UsuarioEntity> usuario = usuarioRepository.buscaUsuarioPorIdMaquina(patrimonio);
