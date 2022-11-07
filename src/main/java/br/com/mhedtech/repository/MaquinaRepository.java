@@ -7,12 +7,13 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 import org.yaml.snakeyaml.events.Event;
 
+import java.util.List;
 import java.util.Optional;
 
 @Repository
 public interface MaquinaRepository extends PagingAndSortingRepository<MaquinaEntity,Integer> {
 
-    Optional<MaquinaEntity> findByPatrimonio(Long id);
+    Optional<MaquinaEntity> findByPatrimonio(Long Id);
 
 
 }

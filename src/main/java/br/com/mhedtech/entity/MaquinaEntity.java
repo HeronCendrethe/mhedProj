@@ -41,9 +41,7 @@ public class MaquinaEntity {
     }
 
 
-    public Long getPatrimonio() {
-        return patrimonio;
-    }
+    public Long getPatrimonio() {return patrimonio;}
 
     public void setPatrimonio(Long patrimonio) {
         this.patrimonio = patrimonio;

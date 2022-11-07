@@ -5,12 +5,11 @@ import br.com.mhedtech.entity.MaquinaEntity;
 import br.com.mhedtech.entity.UsuarioEntity;
 import br.com.mhedtech.repository.MaquinaRepository;
 import br.com.mhedtech.repository.UsuarioRepository;
-import org.hibernate.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.NoResultException;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -27,13 +26,14 @@ public class UsuarioService {
 
         UsuarioEntity usuarioEntity = new UsuarioEntity();
 
-        Optional<MaquinaEntity> maquina = maquinaRepository.findByPatrimonio(usuarioDto.getMaquina().getPatrimonio());
+        Optional<MaquinaEntity> maquina = maquinaRepository.findByPatrimonio(usuarioDto.getMaquina());
         if(!maquina.isPresent()){
             return "Maquina não existe no banco!";
         }
         try{
-            usuarioEntity.toEntity(usuarioDto);
             usuarioEntity.setMaquina(maquina.get());
+            usuarioEntity.toEntity(usuarioDto);
+            usuarioEntity.getMaquina();
             usuarioRepository.save(usuarioEntity);
 
         }catch (Exception e){

@@ -17,7 +17,7 @@ public class UsuarioDto {
 
     private LocalDateTime dataMaq;
 
-    private MaquinaEntity maquina;
+    private Long maquina;
 
 
     public String getNome() {
@@ -44,13 +44,10 @@ public class UsuarioDto {
         this.dataMaq = dataMaq;
     }
 
-    public MaquinaEntity getMaquina() {
-        return maquina;
-    }
+    public Long getMaquina() {return maquina;}
 
-    public void setMaquina(MaquinaEntity maquina) {
-        this.maquina = maquina;
-    }
+    public void setMaquina(Long maquina) {this.maquina = maquina;}
+
 
 
 
@@ -59,6 +56,7 @@ public class UsuarioDto {
         this.nome = usuarioEntity.getNome();
         this.setor = usuarioEntity.getSetor();
         this.dataMaq = usuarioEntity.getDataMaq();
+        //this.maquina = usuarioEntity.getMaquina();
 
 
     }

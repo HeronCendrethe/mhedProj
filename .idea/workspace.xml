@@ -5,42 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="criação dos arquivos">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/dto/MaquinaDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/dto/UsuarioDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_8_0_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_7_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/MaquinaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/MaquinaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/dto/UsuarioDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/dto/UsuarioDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/HistoricoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/HistoricoEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/MaquinaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/MaquinaEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/UsuarioEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/UsuarioEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/PerifericoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/PerifericoEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/MaquinaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/MaquinaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/UsuarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/MaquinaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/MaquinaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/smartbot/mhedtech/TesteSmartbotApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/mhedtech/TesteSmartbotApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/mhedtech/MhedTech.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/mhedtech/entity/MaquinaEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/TesteSmartbotApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/contoller/CoinFiveMinController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/contoller/CoinOneMinController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/contoller/CoinTenMinController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/dto/Coin$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/dto/Coin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/entity/CoinFiveMinEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/entity/CoinOneMinEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/entity/CoinTenMinEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/feignInterface/CoinConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/repository/CoinFiveMinRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/repository/CoinOneMinRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/repository/CoinTenMinRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/service/CoinFiveMinService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/service/CoinOneMinService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/smartbot/testesmartbot/service/CoinTenMinService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/smartbot/testesmartbot/TesteSmartbotApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,35 +210,6 @@
     <MESSAGE value="Mapemento de classes completo" />
     <MESSAGE value="criação dos arquivos" />
     <option name="LAST_COMMIT_MESSAGE" value="criação dos arquivos" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/UsuarioService.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/UsuarioRepository.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/UsuarioService.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/UsuarioRepository.java</url>
-          <line>15</line>
-          <properties class="br.com.mhedtech.repository.UsuarioRepository" method="buscaUsuarioPorIdMaquina">
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
