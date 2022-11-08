@@ -22,4 +22,23 @@ public class HistoricoEntity {
     private MaquinaEntity maquina;
 
 
+
+
+    public Integer getIdHistorico() {return idHistorico;}
+
+    public void setIdHistorico(Integer idHistorico) {this.idHistorico = idHistorico;}
+
+    public LocalDateTime getDataAlterecao() {return dataAlterecao;}
+
+    public void setDataAlterecao(LocalDateTime dataAlterecao) {this.dataAlterecao = dataAlterecao;}
+
+    public String getDescricao() {return descricao;}
+
+    public void setDescricao(String descricao) {this.descricao = descricao;}
+
+    public MaquinaEntity getMaquina() {return maquina;}
+
+    public void setMaquina(MaquinaEntity maquina) {this.maquina = maquina;}
+
+
 }

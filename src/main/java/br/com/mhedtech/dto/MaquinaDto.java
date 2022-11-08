@@ -1,7 +1,10 @@
 package br.com.mhedtech.dto;
 
 
+import org.hibernate.validator.internal.util.logging.LoggerFactory;
+
 import java.time.LocalDateTime;
+import java.util.logging.Logger;
 
 public class MaquinaDto {
 
@@ -16,6 +19,9 @@ public class MaquinaDto {
     private String officeChave;
 
     private String antivirusChave;
+
+
+
 
     public Long getPatrimonio() {
         return patrimonio;

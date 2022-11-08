@@ -17,6 +17,8 @@ public class UsuarioController {
 
     @Autowired
     private UsuarioService usuarioService;
+
+
     @PostMapping("/registro")
     public ResponseEntity<?> criarUsuario(@RequestBody UsuarioDto usuarioDto){
         System.out.println(usuarioDto.getNome());

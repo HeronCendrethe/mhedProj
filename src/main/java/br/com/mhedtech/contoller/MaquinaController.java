@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.persistence.NoResultException;
+
 
 @Controller
 @RequestMapping("maquina")
@@ -21,9 +23,6 @@ public class MaquinaController {
     private MaquinaService maquinaService;
     @PostMapping("/cadastro-maquina")
     public ResponseEntity<?> criarUsuario(@RequestBody MaquinaDto maquinaDto){
-
-        return ResponseEntity.ok(maquinaService.criarMaquina(maquinaDto));
-
-
+            return ResponseEntity.ok(maquinaService.criarMaquina(maquinaDto));
     }
 }
