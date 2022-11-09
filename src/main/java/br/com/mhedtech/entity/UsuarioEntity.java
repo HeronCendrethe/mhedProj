@@ -30,6 +30,9 @@ public class UsuarioEntity implements UserDetails{
 
     private LocalDateTime dataMaq;
 
+
+
+
     @OneToOne( fetch = FetchType.LAZY)
     @JoinColumn(name = "patrimonio")
     private MaquinaEntity maquina;
@@ -95,6 +98,7 @@ public class UsuarioEntity implements UserDetails{
         return null;
     }
 
+
     @Override
     public String getUsername() {
         return null;
@@ -118,6 +122,17 @@ public class UsuarioEntity implements UserDetails{
     @Override
     public boolean isEnabled() {
         return false;
+    }
+
+
+    @Override
+    public String toString() {
+        return "UsuarioEntity{" +
+                "nome='" + nome + '\'' +
+                ", setor='" + setor + '\'' +
+                ", dataMaq=" + dataMaq +
+                ", maquina=" + maquina +
+                '}';
     }
 }
 

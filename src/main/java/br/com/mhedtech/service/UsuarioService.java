@@ -6,9 +6,12 @@ import br.com.mhedtech.entity.UsuarioEntity;
 import br.com.mhedtech.repository.MaquinaRepository;
 import br.com.mhedtech.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.NoResultException;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -59,5 +62,7 @@ public class UsuarioService {
 
 
     }
+
+
 
 }

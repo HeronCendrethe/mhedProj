@@ -9,6 +9,7 @@ public class UsuarioDto {
 
     private String nome;
 
+
     private String setor;
 
     private LocalDateTime dataMaq;
