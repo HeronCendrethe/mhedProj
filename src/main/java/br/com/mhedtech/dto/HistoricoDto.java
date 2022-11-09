@@ -1,7 +1,6 @@
 package br.com.mhedtech.dto;
 
 import br.com.mhedtech.entity.HistoricoEntity;
-
 import java.time.LocalDateTime;
 
 public class HistoricoDto {
@@ -29,13 +28,10 @@ public class HistoricoDto {
         this.descricao = descricao;
     }
 
-    public Long getMaquina() {
-        return maquina;
+    public Long getMaquina() {return maquina;
     }
 
-    public void setMaquina(Long maquina) {
-        this.maquina = maquina;
-    }
+    public void setMaquina(Long maquina) {this.maquina = maquina;}
 
     public void setEntity(HistoricoEntity historicoEntity){
         historicoEntity.setDataAlterecao(this.dataAlteracao);

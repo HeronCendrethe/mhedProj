@@ -2,14 +2,13 @@ package br.com.mhedtech.service;
 
 import br.com.mhedtech.dto.HistoricoDto;
 
-import br.com.mhedtech.dto.MaquinaDto;
 import br.com.mhedtech.entity.HistoricoEntity;
 import br.com.mhedtech.entity.MaquinaEntity;
 
 import br.com.mhedtech.repository.HistoricoRepository;
 import br.com.mhedtech.repository.MaquinaRepository;
 
-import org.hibernate.validator.internal.util.logging.LoggerFactory;
+
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,8 +25,6 @@ public class HistoricoService {
     private MaquinaRepository maquinaRepository;
 
     private  Logger logger;
-
-
 
 
     public void criaHistorico(HistoricoDto historicoDto) throws NoResultException{

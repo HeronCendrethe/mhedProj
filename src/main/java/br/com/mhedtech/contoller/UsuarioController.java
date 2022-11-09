@@ -2,7 +2,6 @@ package br.com.mhedtech.contoller;
 
 import br.com.mhedtech.dto.UsuarioDto;
 import br.com.mhedtech.service.UsuarioService;
-import org.hibernate.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;

@@ -1,11 +1,7 @@
 package br.com.mhedtech.dto;
 
-import br.com.mhedtech.entity.MaquinaEntity;
-import br.com.mhedtech.entity.UsuarioEntity;
-import org.hibernate.validator.constraints.Length;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
+import br.com.mhedtech.entity.UsuarioEntity;
 import java.time.LocalDateTime;
 
 public class UsuarioDto {
@@ -56,8 +52,6 @@ public class UsuarioDto {
         this.nome = usuarioEntity.getNome();
         this.setor = usuarioEntity.getSetor();
         this.dataMaq = usuarioEntity.getDataMaq();
-        //this.maquina = usuarioEntity.getMaquina();
-
 
     }
 }
