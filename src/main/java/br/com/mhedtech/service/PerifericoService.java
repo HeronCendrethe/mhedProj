@@ -5,7 +5,12 @@ import br.com.mhedtech.entity.MaquinaEntity;
 import br.com.mhedtech.entity.PerifericoEntity;
 import br.com.mhedtech.repository.MaquinaRepository;
 import br.com.mhedtech.repository.PerifericoRepository;
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import javax.persistence.NoResultException;
 import java.util.Optional;
@@ -19,6 +24,8 @@ public class PerifericoService {
     @Autowired
     MaquinaRepository maquinaRepository;
 
+    private Logger logger;
+
 
     public void criarPeriferico(PerifericoDto perifericoDto){
         PerifericoEntity perifericoEntity = new PerifericoEntity();
@@ -31,6 +38,19 @@ public class PerifericoService {
             perifericoDto.setEntity(perifericoEntity);
             perifericoEntity.setMaquina(maquina.get());
             perifericoRepository.save(perifericoEntity);
+
+    }
+
+
+    public Page<PerifericoEntity> listaPeriferico (Sort sort, Integer page, Integer size) throws NoResultException{
+
+        try {
+            Pageable pageable = PageRequest.of(page,size,sort);
+            return perifericoRepository.findAll(pageable);
+        }catch (Exception ex){
+            logger.error("Não foi possivel localizar usuarios ->" , ex.getMessage());
+            throw new NoResultException();
+        }
 
     }
 }

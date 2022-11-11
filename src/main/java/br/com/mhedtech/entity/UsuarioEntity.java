@@ -33,7 +33,7 @@ public class UsuarioEntity implements UserDetails{
 
 
 
-    @OneToOne( fetch = FetchType.LAZY)
+    @OneToOne( fetch = FetchType.EAGER)
     @JoinColumn(name = "patrimonio")
     private MaquinaEntity maquina;
 
@@ -125,14 +125,5 @@ public class UsuarioEntity implements UserDetails{
     }
 
 
-    @Override
-    public String toString() {
-        return "UsuarioEntity{" +
-                "nome='" + nome + '\'' +
-                ", setor='" + setor + '\'' +
-                ", dataMaq=" + dataMaq +
-                ", maquina=" + maquina +
-                '}';
-    }
 }
 

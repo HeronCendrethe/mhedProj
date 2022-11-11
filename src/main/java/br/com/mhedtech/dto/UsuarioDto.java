@@ -55,4 +55,5 @@ public class UsuarioDto {
         this.dataMaq = usuarioEntity.getDataMaq();
 
     }
+
 }

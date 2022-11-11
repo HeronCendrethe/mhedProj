@@ -4,11 +4,12 @@ import br.com.mhedtech.dto.PerifericoDto;
 import br.com.mhedtech.repository.PerifericoRepository;
 import br.com.mhedtech.service.PerifericoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+
+import javax.persistence.NoResultException;
 
 @Controller
 @RequestMapping("periferico")
@@ -39,7 +40,23 @@ public class PerificoController {
             return ResponseEntity.ok(mensagemRetorno.toString());
         }
 
+    }
 
+
+    @GetMapping("/lista-perifericos")
+    public ResponseEntity<?>listaPeriferico(@RequestParam("sort") Sort.Direction direction,
+                                            @RequestParam("properties") String properties,
+                                            @RequestParam("page") Integer page,
+                                            @RequestParam("size") Integer size ){
+
+
+        try {
+            PerifericoDto perifericoDto = new PerifericoDto();
+            return ResponseEntity.ok(perifericoService.listaPeriferico(Sort.by(direction,properties),page,size));
+
+        }catch(NoResultException ex){
+            return ResponseEntity.ok("Perifericos não encontrados.");
+        }
 
     }
 }
