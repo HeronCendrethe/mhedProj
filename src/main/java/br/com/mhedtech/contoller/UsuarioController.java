@@ -1,22 +1,16 @@
 package br.com.mhedtech.contoller;
 
 import br.com.mhedtech.dto.UsuarioDto;
-import br.com.mhedtech.entity.UsuarioEntity;
+
 import br.com.mhedtech.repository.UsuarioRepository;
 import br.com.mhedtech.service.UsuarioService;
+import org.hibernate.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
 import javax.persistence.NoResultException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
 
 @Controller
 @RequestMapping("usuario")
@@ -72,6 +66,17 @@ public class UsuarioController {
 
 
     }
+
+    @DeleteMapping("/deleta/{id}")
+    public ResponseEntity<?> deletaUsuario(@PathVariable("id") Integer ID){
+        try {
+            usuarioService.deletaUsuario(ID);
+        }catch (ObjectNotFoundException ex){
+            return ResponseEntity.ok(ex.getMessage());
+        }
+        return ResponseEntity.ok("O usuario foi excluido ");
+    }
+
 
 
 }

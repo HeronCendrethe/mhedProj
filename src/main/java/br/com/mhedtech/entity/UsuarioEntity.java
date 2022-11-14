@@ -17,7 +17,7 @@ public class UsuarioEntity implements UserDetails{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long usuarioId;
+    private Integer usuarioId;
 
     @Column(nullable = false)
     @NotBlank(message = "O nome não pode ser vazio")
@@ -29,8 +29,6 @@ public class UsuarioEntity implements UserDetails{
     private String setor;
 
     private LocalDateTime dataMaq;
-
-
 
 
     @OneToOne( fetch = FetchType.EAGER)
@@ -48,11 +46,11 @@ public class UsuarioEntity implements UserDetails{
     }
 
 
-    public Long getUsuarioId() {
+    public Integer getUsuarioId() {
         return usuarioId;
     }
 
-    public void setUsuarioId(Long usuarioId) {
+    public void setUsuarioId(Integer usuarioId) {
         this.usuarioId = usuarioId;
     }
 

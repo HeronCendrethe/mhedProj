@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="Criação de endpoint cadastro de periferico">
+    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="Criação de endpoint de listar periferico e usuario">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/PerificoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/PerificoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/dto/UsuarioDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/dto/UsuarioDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/UsuarioEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/UsuarioEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/PerifericoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/PerifericoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/UsuarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/PerifericoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/PerifericoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/UsuarioService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -214,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668025496005</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Criação de endpoint de listar periferico e usuario">
+      <created>1668131387250</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1668131387250</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -239,7 +242,8 @@
     <MESSAGE value="Correção de bug no endpoint de cadastro de usuario" />
     <MESSAGE value="Criação de endpoint cadastro de historico" />
     <MESSAGE value="Criação de endpoint cadastro de periferico" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação de endpoint cadastro de periferico" />
+    <MESSAGE value="Criação de endpoint de listar periferico e usuario" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação de endpoint de listar periferico e usuario" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -281,6 +285,11 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="usuarioRepository" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

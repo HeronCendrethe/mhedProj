@@ -5,6 +5,7 @@ import br.com.mhedtech.entity.MaquinaEntity;
 import br.com.mhedtech.entity.UsuarioEntity;
 import br.com.mhedtech.repository.MaquinaRepository;
 import br.com.mhedtech.repository.UsuarioRepository;
+import org.hibernate.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -77,6 +78,19 @@ public class UsuarioService {
         }catch (Exception ex){
             logger.error("Não foi possivel localizar usuarios ->" , ex.getMessage());
             throw new NoResultException();
+        }
+
+
+    }
+
+    public void deletaUsuario(Integer ID) {
+
+        Optional<UsuarioEntity> usuario = usuarioRepository.findById(ID);
+        if (usuario.isPresent()){
+            UsuarioEntity usuarioEntity = usuario.get();
+            usuarioRepository.delete(usuarioEntity);
+        }else{
+            throw new ObjectNotFoundException(ID, "-> Usuario não encontrado");
         }
 
 
