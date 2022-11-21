@@ -7,6 +7,8 @@ import br.com.mhedtech.repository.MaquinaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
+
 @Service
 public class MaquinaService {
 
@@ -27,4 +29,6 @@ public class MaquinaService {
 
         return "OK";
     }
+
+
 }

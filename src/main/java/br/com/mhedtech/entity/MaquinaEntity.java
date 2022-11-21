@@ -1,13 +1,11 @@
 package br.com.mhedtech.entity;
 
 
+import br.com.mhedtech.Enum.MaquinaEnum;
 import br.com.mhedtech.dto.MaquinaDto;
-import br.com.mhedtech.dto.UsuarioDto;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Entity
 @Table(name = "maquina")
@@ -28,6 +26,9 @@ public class MaquinaEntity {
 
     private String antivirusChave;
 
+    @Enumerated(EnumType.STRING)
+    private MaquinaEnum status;
+
 
 
     public void toEntity(MaquinaDto maquinaDto){
@@ -37,8 +38,13 @@ public class MaquinaEntity {
         this.dataCompra = maquinaDto.getDataCompra();
         this.officeChave = maquinaDto.getOfficeChave();
         this.antivirusChave = maquinaDto.getAntivirusChave();
+        this.status=maquinaDto.getStatus();
 
     }
+
+    public MaquinaEnum getStatus() {return status;}
+
+    public void setStatus(MaquinaEnum status) {this.status = status;}
 
 
     public Long getPatrimonio() {return patrimonio;}

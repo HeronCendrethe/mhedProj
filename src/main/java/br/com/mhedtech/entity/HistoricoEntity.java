@@ -1,6 +1,8 @@
 package br.com.mhedtech.entity;
 
 
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.time.LocalDateTime;
@@ -18,7 +20,7 @@ public class HistoricoEntity {
     @NotBlank(message = "Descrição é um campo obrigatório")
     private String descricao;
 
-    @OneToOne( fetch = FetchType.LAZY)
+    @OneToOne(fetch = FetchType.LAZY,cascade = CascadeType.REMOVE)
     private MaquinaEntity maquina;
 
 

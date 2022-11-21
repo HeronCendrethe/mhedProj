@@ -3,8 +3,10 @@ package br.com.mhedtech.service;
 import br.com.mhedtech.dto.PerifericoDto;
 import br.com.mhedtech.entity.MaquinaEntity;
 import br.com.mhedtech.entity.PerifericoEntity;
+import br.com.mhedtech.entity.UsuarioEntity;
 import br.com.mhedtech.repository.MaquinaRepository;
 import br.com.mhedtech.repository.PerifericoRepository;
+import org.hibernate.ObjectNotFoundException;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -52,5 +54,16 @@ public class PerifericoService {
             throw new NoResultException();
         }
 
+    }
+
+
+    public void deletaPeriferico(Integer ID){
+        Optional<PerifericoEntity> periferico = perifericoRepository.findById(ID);
+        if (periferico.isPresent()){
+            PerifericoEntity perifericoEntity = periferico.get();
+            perifericoRepository.delete(perifericoEntity);
+        }else{
+            throw new ObjectNotFoundException(ID, "-> Periferico não encontrado");
+        }
     }
 }

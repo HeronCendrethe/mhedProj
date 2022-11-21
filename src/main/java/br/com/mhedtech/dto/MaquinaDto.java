@@ -1,6 +1,7 @@
 package br.com.mhedtech.dto;
 
 
+import br.com.mhedtech.Enum.MaquinaEnum;
 import java.time.LocalDateTime;
 
 
@@ -18,8 +19,15 @@ public class MaquinaDto {
 
     private String antivirusChave;
 
+    private MaquinaEnum status;
 
+    public MaquinaEnum getStatus() {
+        return status;
+    }
 
+    public void setStatus(MaquinaEnum status) {
+        this.status = status;
+    }
 
     public Long getPatrimonio() {
         return patrimonio;

@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="Criação de endpoint de listar periferico e usuario">
+    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="Criação de endpoint de deletar usuario">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/Enum/MaquinaEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/MaquinaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/MaquinaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/PerificoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/PerificoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/UsuarioEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/UsuarioEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/UsuarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/dto/MaquinaDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/dto/MaquinaDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/HistoricoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/HistoricoEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/MaquinaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/MaquinaEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/MaquinaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/MaquinaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/PerifericoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/PerifericoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/MaquinaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/MaquinaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/PerifericoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/PerifericoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +33,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -217,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668131387250</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Criação de endpoint de deletar usuario">
+      <created>1668437821839</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1668437821840</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,48 +258,10 @@
     <MESSAGE value="Criação de endpoint cadastro de historico" />
     <MESSAGE value="Criação de endpoint cadastro de periferico" />
     <MESSAGE value="Criação de endpoint de listar periferico e usuario" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação de endpoint de listar periferico e usuario" />
+    <MESSAGE value="Criação de endpoint de deletar usuario" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação de endpoint de deletar usuario" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/PerifericoService.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/PerifericoService.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/PerifericoService.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/PerifericoService.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/PerifericoService.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/PerificoController.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/PerificoController.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="usuarioRepository" language="JAVA" />

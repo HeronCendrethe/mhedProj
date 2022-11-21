@@ -12,4 +12,5 @@ public interface MaquinaRepository extends PagingAndSortingRepository<MaquinaEnt
 
 
 
+
 }
