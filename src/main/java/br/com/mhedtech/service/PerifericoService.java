@@ -50,7 +50,7 @@ public class PerifericoService {
             Pageable pageable = PageRequest.of(page,size,sort);
             return perifericoRepository.findAll(pageable);
         }catch (Exception ex){
-            logger.error("Não foi possivel localizar usuarios ->" , ex.getMessage());
+            logger.error("Não foi possivel localizar perifericos ->" , ex.getMessage());
             throw new NoResultException();
         }
 

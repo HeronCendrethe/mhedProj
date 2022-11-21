@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="Criação de endpoint de deletar usuario">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/Enum/MaquinaEnum.java" afterDir="false" />
+    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="Criação de status em maquina">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/MaquinaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/MaquinaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/PerificoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/PerificoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/dto/MaquinaDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/dto/MaquinaDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/HistoricoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/HistoricoEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/MaquinaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/MaquinaEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/MaquinaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/MaquinaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/PerifericoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/PerifericoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/MaquinaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/MaquinaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/PerifericoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/PerifericoService.java" afterDir="false" />
     </list>
@@ -232,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668437821840</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Criação de status em maquina">
+      <created>1669055495065</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669055495065</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,7 +258,8 @@
     <MESSAGE value="Criação de endpoint cadastro de periferico" />
     <MESSAGE value="Criação de endpoint de listar periferico e usuario" />
     <MESSAGE value="Criação de endpoint de deletar usuario" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação de endpoint de deletar usuario" />
+    <MESSAGE value="Criação de status em maquina" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação de status em maquina" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
