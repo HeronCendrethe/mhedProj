@@ -20,7 +20,7 @@ public class HistoricoEntity {
     @NotBlank(message = "Descrição é um campo obrigatório")
     private String descricao;
 
-    @OneToOne(fetch = FetchType.LAZY,cascade = CascadeType.REMOVE)
+    @OneToOne(fetch = FetchType.EAGER,cascade = CascadeType.REMOVE)
     private MaquinaEntity maquina;
 
 

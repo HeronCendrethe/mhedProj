@@ -11,6 +11,10 @@ import br.com.mhedtech.repository.MaquinaRepository;
 
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.NoResultException;
@@ -42,6 +46,19 @@ public class HistoricoService {
 
         }
 
+
+    }
+
+
+    public Page<HistoricoEntity> listaHistorico (Sort sort, Integer page, Integer size) throws NoResultException {
+
+        try {
+            Pageable pageable = PageRequest.of(page,size,sort);
+            return historicoRepository.findAll(pageable);
+        }catch (Exception ex){
+            logger.error("Não foi possivel localizar historicos ->" , ex.getMessage());
+            throw new NoResultException();
+        }
 
     }
 
