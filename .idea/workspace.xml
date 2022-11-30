@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="Criação de endpoint listar historico">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/contoller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/dto/UsuarioDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/dto/UsuarioDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/UsuarioEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/entity/UsuarioEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/repository/UsuarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/mhedtech/service/UsuarioService.java" afterDir="false" />
+    <list default="true" id="45f15352-5e5b-4314-ba1a-8f7676c2a8f9" name="Changes" comment="Criação de endpoint para atualizar usuario">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +86,7 @@
   <component name="RunManager">
     <configuration name="MhedTech" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.mhedtech.MhedTech" />
-      <module name="teste-smartbot" />
+      <module name="mhed-tech" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.mhedtech.*" />
@@ -247,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669134679366</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Criação de endpoint para atualizar usuario">
+      <created>1669830518555</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1669830518555</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -277,7 +279,8 @@
     <MESSAGE value="Criação de status em maquina" />
     <MESSAGE value="Criação de endpoint listar maquinas" />
     <MESSAGE value="Criação de endpoint listar historico" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação de endpoint listar historico" />
+    <MESSAGE value="Criação de endpoint para atualizar usuario" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação de endpoint para atualizar usuario" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
