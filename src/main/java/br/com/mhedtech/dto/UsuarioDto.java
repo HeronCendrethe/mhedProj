@@ -6,7 +6,6 @@ import java.time.LocalDateTime;
 
 public class UsuarioDto {
 
-
     private String nome;
 
 

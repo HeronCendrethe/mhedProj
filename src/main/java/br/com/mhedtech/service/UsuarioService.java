@@ -13,9 +13,14 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+
+
+
 import javax.persistence.NoResultException;
 import java.util.Optional;
 import org.slf4j.Logger;
+import org.springframework.transaction.annotation.Transactional;
+
 
 @Service
 public class UsuarioService {
@@ -25,9 +30,7 @@ public class UsuarioService {
     @Autowired
     private MaquinaRepository maquinaRepository;
 
-
     private Logger logger;
-
 
 
     public String criarUsuario(UsuarioDto usuarioDto){
@@ -95,4 +98,21 @@ public class UsuarioService {
 
 
     }
+
+    @Transactional
+    public void atualizarUsuario(Integer usuarioId,UsuarioDto usuarioDto) {
+
+        Optional<UsuarioEntity> usuario = usuarioRepository.findById(usuarioId);
+        if (usuario.isPresent()){
+                UsuarioEntity usuarioEntity = new UsuarioEntity();
+                usuarioEntity.toEntity(usuarioDto);
+                usuarioRepository.updateUsuarios(usuarioId,usuarioDto.getNome(),
+                        usuarioDto.getSetor(),usuarioDto.getMaquina());
+        }else{
+            throw new ObjectNotFoundException(usuarioId, "-> Usuario não encontrado");
+        }
+
+
+    }
+
 }

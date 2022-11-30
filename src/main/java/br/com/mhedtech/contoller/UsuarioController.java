@@ -2,6 +2,7 @@ package br.com.mhedtech.contoller;
 
 import br.com.mhedtech.dto.UsuarioDto;
 
+
 import br.com.mhedtech.repository.UsuarioRepository;
 import br.com.mhedtech.service.UsuarioService;
 import org.hibernate.ObjectNotFoundException;
@@ -11,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import javax.persistence.NoResultException;
+
 
 @Controller
 @RequestMapping("usuario")
@@ -51,9 +53,11 @@ public class UsuarioController {
 
     }
 
-
     @GetMapping("/lista-usuarios")
-    public ResponseEntity<?> listaUsuarios(@RequestParam("sort")Sort.Direction direction,@RequestParam String properties, @RequestParam("page") Integer page, @RequestParam("size") Integer size ){
+    public ResponseEntity<?> listaUsuarios(@RequestParam("sort")Sort.Direction direction,
+                                           @RequestParam String properties,
+                                           @RequestParam("page") Integer page,
+                                           @RequestParam("size") Integer size ){
         try {
             UsuarioDto usuarioDto = new UsuarioDto();
 
@@ -78,5 +82,15 @@ public class UsuarioController {
     }
 
 
+    @PutMapping("/atualiza-usuario/{id}")
+    public ResponseEntity<?> atualizarUsuario(@PathVariable("id") Integer usuarioId,
+                                              @RequestBody UsuarioDto usuarioDto){
+        try {
+            usuarioService.atualizarUsuario(usuarioId,usuarioDto);
+        }catch (ObjectNotFoundException ex){
+            return ResponseEntity.ok(ex.getMessage());
+        }
+        return ResponseEntity.ok("O usuario foi atualizado ");
 
+    }
 }

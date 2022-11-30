@@ -42,9 +42,7 @@ public class UsuarioEntity implements UserDetails{
         this.setor = usuarioDto.getSetor();
         this.dataMaq = usuarioDto.getDataMaq();
 
-
     }
-
 
     public Integer getUsuarioId() {
         return usuarioId;
